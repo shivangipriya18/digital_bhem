@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking Process</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2><u>Room Booking Form</u></h2>
+    <form id="registration-form" method="post" action="booking.php">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email-Id:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="place">Place:</label>
+        <input type="place" id="place" name="place">
+      </div>
+       <div class="form-group">
+        <label for="phonenumber">PhoneNumber:</label>
+        <input type="number" id="phonenumber" name="phonenumber" required>
+      </div>
+      <div class="form-group">
+        <label for="arrivaltime">Arrival Time:</label>
+        <input type="date" id="arrivaltime" name="arrivaltime" required>
+      </div>
+      <div class="form-group">
+        <label for="departuretime">Departure Time:</label>
+        <input type="date" id="departuretime" name="departuretime" required>
+      </div>
+      <div class="form-group">
+        <label for="total-days">Total No of Days:</label>
+        <input type="number" id="total-days" name="total-days" required>
+      </div>
+      <div class="form-group">
+        <label for="total-persons">Total No of Persons:</label>
+        <input type="number" id="total-persons" name="total-persons" required>
+      </div>
+      <div class="form-group">
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type">
+          
+             <option value="acrooms">Single Seater AC Room (1500/- per day)</option>
+                <option value="acroomd">Double Seater AC Room (2000/- per day)</option>
+          
+             <option value="nonacrooms">Single Seater NON AC Room (800/- per day)</option>
+                <option value="nonacroomd">Double Seater NON AC Room (1000/- per day)</option>
+            
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="serive">Additional Service:</label>
+        <input type="checkbox" id="yes" name="service" value="yes">
+        <label for="yes">Complementary breakfast</label><br>
+        <input type="checkbox" id="no" name="service" value="no">
+        <label for="no">Wifi services</label>
+      </div>
+       <div class="form-group">
+        <label for="pickup">PickUp Service:</label>
+        <input type="checkbox" id="yes" name="pickup" value="yes">
+        <label for="yes">Yes!! Please pick me up on my arrival</label><br>
+        <input type="checkbox" id="no" name="pickup" value="no">
+        <label for="no">No i will take my own way</label>
+      </div>
+      <div class="form-group">
+        <label for="advance-amount">Advance Amount:</label>
+        <input type="number" id="advance-amount" name="advance-amount" required>
+      </div> 
+      <div class="form-group">
+        <label for="total-no-room">Total Number of Room:</label>
+        <input type="number" id="total-no-room" name="total-no-room" required>
+      </div>
+      <div class="form-group">
+        <label for="total-cost">Total Cost:</label>
+        <input type="number" id="total-cost" name="total-cost" required>
+      </div>
+      
+        <div id="b1" >
+  <button  class="b1" >Submit</button>
+</div>
+      <div id="mask" class="hidden"></div>
+<section id="modal" class="hidden">
+  <p>Registered!!</p>
+</section>
+      
+  
+        
+
+  <script src="script.js"></script>
+</body>
+</html>
